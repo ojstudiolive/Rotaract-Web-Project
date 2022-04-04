@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Rotaract Club UG</title>
+</head>
+
+<body>
+    <main>
+        <section class="glass">
+            <div class="dashboard"></div>
+
+
+            <nav>
+                <div class="logo"><a href="index.html"><img src="assets/Rotaract UG logo 1.svg" alt=""></a></div>
+                <div class="openMenu"><img src="assets/menu.svg" alt="Open Menu"></div>
+                <ul class="mainMenu">
+                    <li class="active"><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Our projects</a></li>
+                    <li><a href="donation.html">Donate</a></li>
+                    <li><a href="shop.html">Merchandise</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="join-club.html">Join our club</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <div class="closeMenu"><img src="assets/close.svg" alt="Close Menu"></div>
+                    <div class="icons">
+                        <img src="ASSETS/Facebook.svg" alt="Facebook Page link" class="facebook">
+                        <img src="ASSETS/instagram.svg" alt="Instagram Page link" class="instagram">
+                        <img src="ASSETS/twitter.svg" alt="Twitter Page link" class="Twitter">
+                        <img src="ASSETS/whatsapp.svg" alt="Whatsapp Page link" class="whatsapp">
+                    </div>
+                </ul>
+            </nav>
+
+            <section class="shop">
+
+                <div class="shop-top">
+                    <h1>SHOP</h1>
+
+                    <div class="ec-cart-widget"></div>
+                    <div>
+                        <script data-cfasync="false" type="text/javascript"
+                            src="https://app.ecwid.com/script.js?69292791&data_platform=code&data_date=2021-12-08"
+                            charset="utf-8"></script>
+                        <script type="text/javascript">Ecwid.init();</script>
+                    </div>
+                </div>
+
+                <div class="store" id="merchandise">
+
+                    <div class="myshop" id="my-store-69292791"></div>
+                    <div>
+                        <script data-cfasync="false" type="text/javascript"
+                            src="https://app.ecwid.com/script.js?69292791&data_platform=code&data_date=2021-12-08"
+                            charset="utf-8"></script>
+                        <script
+                            type="text/javascript"> xProductBrowser("categoriesPerRow=3", "views=grid(20,3) list(60) table(60)", "categoryView=grid", "searchView=list", "id=my-store-69292791");</script>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <footer>
+                <p class="footer-text"><img src="assets/copyright.svg" alt="">2021, Rotaract Club, Empowered and Donated by
+                    OJStudioLive.</p>
+            </footer>
+        </section>
+
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </main>
+
+    <script>
+        const mainMenu = document.querySelector('.mainMenu');
+        const closeMenu = document.querySelector('.closeMenu');
+        const openMenu = document.querySelector('.openMenu');
+
+        openMenu.addEventListener('click', show);
+        closeMenu.addEventListener('click', close);
+
+        function show() {
+            mainMenu.style.display = 'flex';
+            mainMenu.style.top = '0';
+        }
+        function close() {
+            mainMenu.style.top = '-250%';
+        }
+
+    </script>
+</body>
+
+</html>

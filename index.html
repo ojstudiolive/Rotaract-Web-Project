@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Rotaract Club</title>
+</head>
+
+<body>
+    <main>
+        <section class="glass">
+            <div class="dashboard"></div>
+
+            <nav>
+                <div class="logo"><a href="index.html"><img src="assets/Rotaract UG logo 1.svg" alt=""></a></div>
+                <div class="openMenu"><img src="assets/menu.svg" alt="Open Menu"></div>
+                <ul class="mainMenu">
+                    <li class="active"><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Our projects</a></li>
+                    <li><a href="donation.html">Donate</a></li>
+                    <li><a href="shop.html">Merchandise</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="join-club.html">Join our club</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <div class="closeMenu"><img src="assets/close.svg" alt="Close Menu"></div>
+                    <div class="icons">
+                        <img src="ASSETS/Facebook.svg" alt="Facebook Page link" class="facebook">
+                        <img src="ASSETS/instagram.svg" alt="Instagram Page link" class="instagram">
+                        <img src="ASSETS/twitter.svg" alt="Twitter Page link" class="Twitter">
+                        <img src="ASSETS/whatsapp.svg" alt="Whatsapp Page link" class="whatsapp">
+                    </div>
+                </ul>
+            </nav>
+
+            <section class="hero">
+
+                <div class="hero-image">
+                    <img class="hero-img" src="assets/president hero.svg" alt="Rotaract UG club President Name">
+                </div>  
+                              
+                <div class="container">
+                    
+                    <div class="hero-main-cta">
+                        <p class="hero-text">"Act as if what you do makes a difference. It does."</p>
+                        <div class="home-cta">
+                            <a target="_blank" href="https://paystack.com/pay/donate-rotaract-ug"
+                                class="hero-cta">Donate <img src="assets/coin.svg" alt=""> </a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="data">
+
+                <div class="donation-received">
+                    <img src="assets/donation.svg" alt="">
+                    <p class="num">+100</p>
+                    <p class="title">Donations received</p>
+                </div>
+
+                <div class="money-received">
+                    <img src="assets/money.svg" alt="">
+                    <p class="num">+5K</p>
+                    <p class="title">GHC received</p>
+                </div>
+
+                <div class="active-campaigns">
+                    <img src="assets/campaigns.svg" alt="">
+                    <p class="num">+3</p>
+                    <p class="title">Active campaigns</p>
+                </div>
+
+                <div class="active-members">
+                    <img src="assets/members.svg" alt="">
+                    <p class="num">+30</p>
+                    <p class="title">Active members</p>
+                </div>
+            </section>
+
+            <footer>
+                <p class="footer-text"><img src="assets/copyright.svg" alt="">2021, Rotaract Club, Empowered and Donated by
+                    OJStudioLive.</p>
+            </footer>
+        </section>
+
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </main>
+
+    <script>
+        const mainMenu = document.querySelector('.mainMenu');
+        const closeMenu = document.querySelector('.closeMenu');
+        const openMenu = document.querySelector('.openMenu');
+
+        openMenu.addEventListener('click', show);
+        closeMenu.addEventListener('click', close);
+
+        function show() {
+            mainMenu.style.display = 'flex';
+            mainMenu.style.top = '0';
+        }
+        function close() {
+            mainMenu.style.top = '-250%';
+        }
+
+    </script>
+</body>
+
+</html>

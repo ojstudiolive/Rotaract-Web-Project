@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Rotaract Club UG</title>
+</head>
+
+<body>
+    <main>
+        <section class="glass">
+            <div class="dashboard"></div>
+
+            <nav>
+                <div class="logo"><a href="index.html"><img src="assets/Rotaract UG logo 1.svg" alt=""></a></div>
+                <div class="openMenu"><img src="assets/menu.svg" alt="Open Menu"></div>
+                <ul class="mainMenu">
+                    <li class="active"><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Our projects</a></li>
+                    <li><a href="donation.html">Donate</a></li>
+                    <li><a href="shop.html">Merchandise</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="join-club.html">Join our club</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <div class="closeMenu"><img src="assets/close.svg" alt="Close Menu"></div>
+                    <div class="icons">
+                        <img src="ASSETS/Facebook.svg" alt="Facebook Page link" class="facebook">
+                        <img src="ASSETS/instagram.svg" alt="Instagram Page link" class="instagram">
+                        <img src="ASSETS/twitter.svg" alt="Twitter Page link" class="Twitter">
+                        <img src="ASSETS/whatsapp.svg" alt="Whatsapp Page link" class="whatsapp">
+                    </div>
+                </ul>
+            </nav>
+
+            <section class="event">
+                <h1>EVENT CALENDAR</h1>
+
+                <div class="calendar">
+                    <iframe
+                        src="https://calendar.google.com/calendar/embed?src=4t748vqkpchpcsqrq0td4dbf7s%40group.calendar.google.com&ctz=Africa%2FAbidjan"
+                        style="border: 0" width="500" height="600" frameborder="0" scrolling="no"></iframe>
+                </div>
+
+            </section>
+
+            <footer>
+                <p class="footer-text"><img src="assets/copyright.svg" alt="">2021, Rotaract Club, Empowered and Donated by
+                    OJStudioLive.</p>
+            </footer>
+        </section>
+
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </main>
+
+    <script>
+        const mainMenu = document.querySelector('.mainMenu');
+        const closeMenu = document.querySelector('.closeMenu');
+        const openMenu = document.querySelector('.openMenu');
+
+        openMenu.addEventListener('click', show);
+        closeMenu.addEventListener('click', close);
+
+        function show() {
+            mainMenu.style.display = 'flex';
+            mainMenu.style.top = '0';
+        }
+        function close() {
+            mainMenu.style.top = '-250%';
+        }
+
+    </script>
+</body>
+
+</html>
